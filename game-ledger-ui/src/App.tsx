@@ -33,13 +33,15 @@ export const App = () => {
           </div>
         )}
 
-        {selectedItem === "Home" && (
-          <HomePage loggedIn={loggedIn} videoGames={testVideoGames} />
-        )}
-        {/* {selectedItem === "Sort by score" && <SortByScorePage />}
+        <div className="page-content">
+          {selectedItem === "Home" && (
+            <HomePage loggedIn={loggedIn} videoGames={testVideoGames} />
+          )}
+          {/* {selectedItem === "Sort by score" && <SortByScorePage />}
         {selectedItem === "Recommendations" && <RecommendationsPage />}
         {selectedItem === "Tracked" && <TrackedPage />}
         {selectedItem === "Settings" && <SettingsPage />} */}
+        </div>
       </div>
     </ChakraProvider>
   );

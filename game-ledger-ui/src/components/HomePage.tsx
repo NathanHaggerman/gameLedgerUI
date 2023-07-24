@@ -13,7 +13,7 @@ interface HomePageProps {
   videoGames: { title: string }[];
 }
 
-export default function HomePage({ loggedIn, videoGames }: HomePageProps) {
+export default function HomePage({ loggedIn }: HomePageProps) {
   return (
     <>
       {!loggedIn ? (
@@ -58,7 +58,7 @@ export default function HomePage({ loggedIn, videoGames }: HomePageProps) {
           </Stack>
         </Container>
       ) : (
-        <GameCardList games={videoGames} />
+        <GameCardList />
       )}
     </>
   );

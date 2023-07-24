@@ -1,5 +1,10 @@
+:root {
+  --sidebar-width: 200px;
+}
+
 .app-container {
   display: flex;
+  flex-direction: row;
 }
 
 .sidebar {
@@ -8,6 +13,10 @@
   top: 0;
   bottom: 0;
   background-color: #333;
-  width: 200px;
+  width: var(--sidebar-width);
   padding: 20px;
+}
+
+.page-content {
+  margin-left: calc(var(--sidebar-width) + 100px);
 }
