@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 
-export default function CallToAction() {
+export default function HomePage() {
   return (
     <Container maxW={"5xl"}>
       <Stack
